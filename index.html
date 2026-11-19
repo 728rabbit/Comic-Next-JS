@@ -453,7 +453,7 @@ Found this useful? Like 👍 & Share 🔄! Next episode: Server vs Client~
 做到性能與互動嘅完美平衡！⚖️
 
 💡 今日小測驗：
-你寫咗一個 <UserProfile name="John" /> 組件，入面只需要顯示個名，完全唔需要點擊或者 State。你應該點做？
+你寫咗一個 &lt;UserProfile name="John" /&gt; 組件，入面只需要顯示個名，完全唔需要點擊或者 State。你應該點做？
 A) 喺文件頂部加 "use client"
 B) 咩都唔使加，當佢係 Server Component
 👇 留言話我知你嘅答案啦！
@@ -488,7 +488,7 @@ Don't mark your whole app as "use client"! The right way:
 Perfect balance of performance & interactivity! ⚖️
 
 💡 Quiz of the day:
-You wrote a <UserProfile name="John" /> component that only displays a name — no clicks, no state. What should you do?
+You wrote a &lt;UserProfile name="John" /&gt; component that only displays a name — no clicks, no state. What should you do?
 A) Add "use client" at the top
 B) Add nothing — keep it a Server Component
 👇 Drop your answer in the comments!
@@ -547,7 +547,7 @@ Found this useful? Like 👍 & Share 🔄! Next episode: Data Fetching & Server 
 // app/users/page.tsx
 export default async function UsersPage() {
   const users = await fetch('https://api...').then(res => res.json())
-  return <ul>{users.map(...)}</ul>
+  return &lt;ul&gt;{users.map(...)}&lt;/ul&gt;
 }
 </code>
 
@@ -565,7 +565,7 @@ export async function createUser(formData: FormData) {
 // form.tsx
 import { createUser } from "./actions"
 export default function Form() {
-  return <form action={createUser}><input name="name" /><button>Submit</button></form>
+  return &lt;form action={createUser}&gt;&lt;input name="name" /&gt;&lt;button>Submit&lt;/button&gt;&lt;/form&gt;
 }
 </code>
 
@@ -597,7 +597,7 @@ No more useEffect & useState! Just make the component async and use await fetch(
 // app/users/page.tsx
 export default async function UsersPage() {
   const users = await fetch('https://api...').then(res => res.json())
-  return <ul>{users.map(...)}</ul>
+  return &lt;ul&gt;{users.map(...)}&lt;/ul&gt;
 }
 </code>
 
@@ -615,7 +615,7 @@ export async function createUser(formData: FormData) {
 // form.tsx
 import { createUser } from "./actions"
 export default function Form() {
-  return <form action={createUser}><input name="name" /><button>Submit</button></form>
+  return &lt;form action={createUser}&gt;&lt;input name="name" /&gt;&lt;button>Submit&lt;/button&gt;&lt;/form&gt;
 }
 </code>
 
