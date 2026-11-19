@@ -58,6 +58,7 @@
   --ink:#1a1a1a; --paper:#fffdf6;
   --c1:#ffe8a3; --c1d:#fff6d6; --c2:#bdf0d8; --c2d:#e3f9ee;
   --c3:#d9c8ff; --c3d:#ece3ff; --c4:#ffd6ad; --c4d:#ffe9d1;
+  --c5:#b8e0ff; --c5d:#e3f3ff; --c6:#ffcce0; --c6d:#ffe6f0;
   --blue:#0070f3;
   --shadow:6px 6px 0 var(--ink); --shadow-lg:10px 10px 0 var(--ink);
   --hand:'ZCOOL KuaiLe', cursive; --round:'M PLUS Rounded 1c', -apple-system, sans-serif;
@@ -139,6 +140,8 @@ body[data-lang="en"] .bubble h1, body[data-lang="en"] .ep-badge{ font-family:var
 .panel.ep2 .panel-head{background:var(--c2)} .panel.ep2 .panel-img{background:var(--c2d)}
 .panel.ep3 .panel-head{background:var(--c3)} .panel.ep3 .panel-img{background:var(--c3d)}
 .panel.ep4 .panel-head{background:var(--c4)} .panel.ep4 .panel-img{background:var(--c4d)}
+.panel.ep5 .panel-head{background:var(--c5)} .panel.ep5 .panel-img{background:var(--c5d)}
+.panel.ep6 .panel-head{background:var(--c6)} .panel.ep6 .panel-img{background:var(--c6d)}
 
 /* ===== FB 貼文（永遠並列中英兩份） ===== */
 details.fb{border:3px solid var(--ink);border-radius:16px;background:#fff;overflow:hidden}
@@ -212,8 +215,8 @@ footer a{margin:0 8px;border-bottom:2px dotted #fff}
 <main id="page" class="page">
   <div class="container">
     <h2 class="page-title">
-      <span class="lang-zh">📖 漫畫連載（第 1 - 4 集）</span>
-      <span class="lang-en">📖 Comic Series (EP 1-4)</span>
+      <span class="lang-zh">📖 漫畫連載（第 1 - 6 集）</span>
+      <span class="lang-en">📖 Comic Series (EP 1-6)</span>
     </h2>
     <p class="page-sub">
       <span class="lang-zh">每格都附「一鍵複製 Facebook 貼文」，中英兩份，睇完即 Post！🔥</span>
@@ -629,6 +632,230 @@ Found this useful? Like 👍 & Share 🔄! Next episode: Tailwind CSS & shadcn/u
 
 #NextJS #React #ServerActions #DataFetching #FullStack #FrontendDevelopment #CodingManga #LearnToCode #Vercel #TypeScript #WebDev #AppRouter</div>
                 <button class="copy-btn" onclick="copyFB('fb4-en',this)">📋 Copy English post</button>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </article>
+
+	<!-- 第 5 集 -->
+    <article class="panel ep5">
+      <div class="panel-head">
+        <span class="ep-badge">EP 5</span>
+        <h2>
+          <span class="lang-zh">Tailwind CSS + shadcn/ui 🎨</span>
+          <span class="lang-en">Tailwind CSS + shadcn/ui 🎨</span>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <div class="panel-img">
+          <div class="comic-image-placeholder">
+            <a href="images/ep5.png" target="_blank"><img src="images/ep5.png" alt="EP5"></a>
+          </div>
+        </div>
+        <div class="panel-text">
+          <ul>
+            <li>
+              <span class="lang-zh">Tailwind：樣式直接寫喺 className，告別 CSS 文件</span>
+              <span class="lang-en">Write styles directly in className, say goodbye to CSS files</span>
+            </li>
+            <li>
+              <span class="lang-zh">shadcn/ui：唔係傳統 UI 庫，係「複製貼上」嘅組件代碼</span>
+              <span class="lang-en">Not a library you install — it's copy & paste component code</span>
+            </li>
+            <li>
+              <span class="lang-zh">兩者結合，幾分鐘砌出專業級 UI</span>
+              <span class="lang-en">Combined, build professional-grade UI in minutes</span>
+            </li>
+          </ul>
+          <div class="quiz">
+            <span class="q-tag">
+              <span class="lang-zh">💡 今日小測驗</span>
+              <span class="lang-en">💡 Quiz of the Day</span>
+            </span>
+            <span class="lang-zh">shadcn/ui 嘅組件代碼，預設係用咩寫？<em>（答案：B）</em></span>
+            <span class="lang-en">What is shadcn/ui component code written with by default? <em>(Answer: B)</em></span>
+          </div>
+          <details class="fb">
+            <summary>
+              <span class="lang-zh">複製此集 Facebook 貼文</span>
+              <span class="lang-en">Copy this episode's FB post</span>
+            </summary>
+            <div class="fb-body">
+              <!-- 中文版 -->
+              <div class="fb-post lang-zh">
+                <div class="fb-label">zh 中文版</div>
+                <div class="fb-text" id="fb5-zh">【🚀 漫畫 Next.js】第五集：Tailwind CSS + shadcn/ui = 一秒建構靚仔 UI！🎨✨
+
+上一集我哋搞掂咗全棧 Data Fetching & Server Actions，今次來到前端開發最開心嘅部分 —— 寫 UI！
+以前寫 CSS 調到頭痕？用 UI 庫又怕 Bundle Size 太大？Next.js 官方推薦嘅黃金組合話你知：靚仔 UI 可以好快！👇
+
+🌟 1. Tailwind CSS：告別 CSS 文件 (No more CSS files!)
+唔使再諗 Class 名，唔使再切換文件！直接在 className 入面寫 Utility Classes（例如 bg-blue-500 text-white p-4 rounded-lg）。所見即所得，開發速度提升 200%！🚀
+
+🌟 2. shadcn/ui：唔係傳統 UI 庫 (Not a traditional library)
+shadcn/ui 唔係一個你要 npm install 嘅龐大 Library。佢係一套高質素、無障礙 (Accessible) 嘅 UI 組件代碼。只要用 CLI 指令（例如 npx shadcn@latest add button），佢就會將組件代碼直接複製到你嘅專案入面！
+✅ 優點：你可以完全掌控同修改佢嘅代碼，唔使擔心庫更新會搞爛你個 App！
+
+🌟 3. 極速砌 UI (Build UI super fast!)
+Tailwind 負責快速樣式，shadcn/ui 負責提供靚仔又功能完善嘅基礎元件（Button, Dialog, Input, Card...）。兩者結合，幾分鐘砌出專業級 Dashboard！⚡️
+
+💡 今日小測驗：
+shadcn/ui 嘅組件代碼，預設係用咩語言/框架寫㗎？
+A) 純 HTML/CSS
+B) React + TypeScript + Tailwind CSS
+👇 留言話我知你嘅答案啦！
+
+覺得有用記得 Like 👍、Share 🔄！下一集講 SEO、圖片優化與部署～
+
+#NextJS #React #TailwindCSS #shadcnui #UIUX #FrontendDevelopment #WebDevelopment #CodingManga #程式設計 #前端開發 #學寫Code #Vercel #TypeScript #趣味編程 #ProgrammerLife #AppRouter</div>
+                <button class="copy-btn" onclick="copyFB('fb5-zh',this)">📋 複製中文貼文</button>
+              </div>
+              <!-- 英文版 -->
+              <div class="fb-post lang-en">
+                <div class="fb-label">🇬🇧 English Version</div>
+                <div class="fb-text" id="fb5-en">[🚀 Learn Next.js with Comics] EP 5: Tailwind CSS + shadcn/ui = Beautiful UI in seconds! 🎨✨
+
+In the last episode, we conquered full-stack Data Fetching & Server Actions. Now, it's time for the most fun part of frontend development — building the UI!
+Tired of tweaking CSS? Worried about bundle size with traditional UI libraries? The golden combo recommended by Next.js shows you: beautiful UI can be built super fast! 👇
+
+🌟 1. Tailwind CSS: No more CSS files!
+No more brainstorming class names or switching files! Just write Utility Classes directly in className (e.g., bg-blue-500 text-white p-4 rounded-lg). What you see is what you get, boosting dev speed by 200%! 🚀
+
+🌟 2. shadcn/ui: Not a traditional library
+shadcn/ui is NOT a massive library you npm install. It's a set of high-quality, accessible UI component code. Just use the CLI command (e.g., npx shadcn@latest add button), and it copies the component code directly into your project!
+✅ Benefit: You have full control to modify the code, no fear of library updates breaking your app!
+
+🌟 3. Build UI super fast!
+Tailwind handles rapid styling, while shadcn/ui provides beautiful and fully functional base components (Button, Dialog, Input, Card...). Combine them, and you can build a professional-grade Dashboard in minutes! ⚡️
+
+💡 Quiz of the Day:
+What is shadcn/ui component code written with by default?
+A) Pure HTML/CSS
+B) React + TypeScript + Tailwind CSS
+👇 Let me know your answer in the comments!
+
+If you found this helpful, remember to Like 👍 and Share 🔄 with your coding friends! Next episode: SEO, Image Optimization & Deployment ~
+
+#NextJS #React #TailwindCSS #shadcnui #UIUX #FrontendDevelopment #WebDevelopment #CodingManga #TypeScript #AppRouter</div>
+                <button class="copy-btn" onclick="copyFB('fb5-en',this)">📋 Copy English post</button>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </article>
+	
+	    <!-- 第 6 集 -->
+    <article class="panel ep6">
+      <div class="panel-head">
+        <span class="ep-badge">EP 6</span>
+        <h2>
+          <span class="lang-zh">SEO、圖片優化與部署 Vercel 🚀</span>
+          <span class="lang-en">SEO, Image Optimization & Deploy to Vercel 🚀</span>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <div class="panel-img">
+          <div class="comic-image-placeholder">
+            <a href="images/ep6.png" target="_blank"><img src="images/ep6.png" alt="EP6"></a>
+          </div>
+        </div>
+        <div class="panel-text">
+          <ul>
+            <li>
+              <span class="lang-zh">`&lt;Image /&gt;` 元件自動優化圖片，杜絕排版跳動 (Layout Shift)</span>
+              <span class="lang-en">`&lt;Image /&gt;` component auto-optimizes images, preventing Layout Shift</span>
+            </li>
+            <li>
+              <span class="lang-zh">用 `generateMetadata` 設定 SEO 同 Open Graph，Google 搜尋結果超靚</span>
+              <span class="lang-en">Use `generateMetadata` for SEO & Open Graph, making Google results look great</span>
+            </li>
+            <li>
+              <span class="lang-zh">一鍵 Deploy 上 Vercel，自動處理 Hosting 同 CI/CD</span>
+              <span class="lang-en">One-click Deploy to Vercel, handling Hosting & CI/CD automatically</span>
+            </li>
+          </ul>
+          <div class="quiz">
+            <span class="q-tag">
+              <span class="lang-zh">💡 今日小測驗</span>
+              <span class="lang-en">💡 Quiz of the Day</span>
+            </span>
+            <span class="lang-zh">Next.js 官方推薦嘅部署平台係咩？<em>（答案：Vercel）</em></span>
+            <span class="lang-en">What is the officially recommended deployment platform for Next.js? <em>(Answer: Vercel)</em></span>
+          </div>
+          <details class="fb">
+            <summary>
+              <span class="lang-zh">複製此集 Facebook 貼文</span>
+              <span class="lang-en">Copy this episode's FB post</span>
+            </summary>
+            <div class="fb-body">
+              <!-- 中文版 -->
+              <div class="fb-post lang-zh">
+                <div class="fb-label">zh 中文版</div>
+                <div class="fb-text" id="fb6-zh">【🚀 漫畫 Next.js】第六集（最終回）：SEO、圖片優化與部署 Vercel！完美上線！🎉
+
+恭喜大家跟住我哋嘅漫畫學到呢度！🎓 最後一集，我哋要令你嘅網站「又快、又靚、又搵得到」，準備正式上線！👇
+
+🌟 1. 圖片優化：告別 Layout Shift (No more Layout Shift!)
+千祈唔好直接用 `&lt;img&gt;` 標籤！用 Next.js 專屬嘅 `&lt;Image /&gt;` 元件，佢會自動將圖片轉做 WebP/AVIF、按需加載 (Lazy Load)，完美解決 Core Web Vitals 中最頭痛嘅排版跳動問題！🖼️
+
+🌟 2. SEO 與 Metadata：Rank higher on Google!
+喺 `page.tsx` 入面匯出 `generateMetadata` 函數，輕鬆設定 Title、Description 同 Open Graph 圖片。Google 搜尋結果會顯示得超靚仔，點擊率 (CTR) 即刻提升！🔍
+
+// app/page.tsx
+export function generateMetadata() {
+  return { title: 'My Awesome Site', openGraph: { images: ['/og.png'] } }
+}
+
+🌟 3. 一鍵部署 Vercel (One-click Deploy!)
+Next.js 同 Vercel 係最佳拍檔！只要將代碼 Push 上 GitHub，喺 Vercel 點擊 "Deploy"，佢就會自動幫你處理 Edge Network、Serverless Functions 同 CI/CD。幾分鐘後，你嘅網站就 Live 晒全球！🚀
+
+💡 今日小測驗：
+Next.js 官方推薦嘅部署平台係咩？
+A) AWS EC2
+B) Vercel
+👇 留言話我知你嘅答案啦！
+
+🎉 恭喜完成「漫畫 Next.js」系列！
+由 Setup 到全棧開發，再到完美部署，你已經掌握咗 90% 嘅日常工作技能！記得 Like 👍、Share 🔄 俾更多朋友，我哋下次見！
+
+#NextJS #React #Vercel #SEO #WebPerformance #FrontendDevelopment #CodingManga #程式設計 #前端開發 #學寫Code #TypeScript #趣味編程 #ProgrammerLife #AppRouter</div>
+                <button class="copy-btn" onclick="copyFB('fb6-zh',this)">📋 複製中文貼文</button>
+              </div>
+              <!-- 英文版 -->
+              <div class="fb-post lang-en">
+                <div class="fb-label">🇬🇧 English Version</div>
+                <div class="fb-text" id="fb6-en">[🚀 Learn Next.js with Comics] EP 6 (Finale): SEO, Image Optimization & Deploy to Vercel! Perfect Launch! 🎉
+
+Congrats on making it to the end of our comic series! 🎓 In this final episode, we'll make your site "fast, beautiful, and discoverable" before going live! 👇
+
+🌟 1. Image Optimization: No more Layout Shift!
+Never use the standard `&lt;img&gt;` tag! Use Next.js's built-in `&lt;Image /&gt;` component. It automatically converts images to WebP/AVIF, lazy-loads them, and perfectly solves the dreaded Layout Shift issue in Core Web Vitals! 🖼️
+
+🌟 2. SEO & Metadata: Rank higher on Google!
+Export the `generateMetadata` function in your `page.tsx` to easily set the Title, Description, and Open Graph images. Your Google search results will look amazing, boosting your Click-Through Rate (CTR)! 🔍
+
+// app/page.tsx
+export function generateMetadata() {
+  return { title: 'My Awesome Site', openGraph: { images: ['/og.png'] } }
+}
+
+🌟 3. One-click Deploy to Vercel!
+Next.js and Vercel are the perfect match! Just push your code to GitHub and click "Deploy" on Vercel. It automatically handles Edge Networks, Serverless Functions, and CI/CD. In minutes, your site is live globally! 🚀
+
+💡 Quiz of the Day:
+What is the officially recommended deployment platform for Next.js?
+A) AWS EC2
+B) Vercel
+👇 Let me know your answer in the comments!
+
+🎉 Congrats on completing the "Learn Next.js with Comics" series!
+From Setup to Full-stack Development, and finally to Deployment, you've now mastered 90% of daily work skills! Remember to Like 👍 and Share 🔄 with your friends. See you next time!
+
+#NextJS #React #Vercel #SEO #WebPerformance #FrontendDevelopment #CodingManga #TypeScript #AppRouter</div>
+                <button class="copy-btn" onclick="copyFB('fb6-en',this)">📋 Copy English post</button>
               </div>
             </div>
           </details>
